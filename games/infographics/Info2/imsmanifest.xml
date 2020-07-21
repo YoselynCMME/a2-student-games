@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_68ZgOPupPri_course_id" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Vocabulary Food and Drink</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="Vocabulary_Food_and_Drink_ORG">
+    <organization identifier="Vocabulary_Food_and_Drink_ORG">
+      <title>Vocabulary Food and Drink</title>
+      <item identifier="Vocabulary_Food_and_Drink_SCO" isvisible="true" identifierref="__68ZgOPupPri_course_id_RES">
+        <title>Vocabulary Food and Drink</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__68ZgOPupPri_course_id_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/6p7ElupMFfo_80_P_205_153_1763_1145_DX286_DY286_CX184_CY119.png" />
+      <file href="mobile/5X6ZctAgFgr_80_DX238_DY238_CX177_CY118.jpg" />
+      <file href="mobile/6iGdScUbbg5_80_P_158_395_1747_1077_DX244_DY244_CX157_CY97.png" />
+      <file href="mobile/5WZKkRZvVIp_80_DX244_DY244_CX121_CY182.jpg" />
+      <file href="mobile/6VxWcK97d1H_80_P_136_0_1730_1429_DX200_DY200_CX127_CY105.png" />
+      <file href="mobile/62YElQE979e_80_P_290_318_771_1541_DX228_DY228_CX64_CY128.png" />
+      <file href="mobile/5t4cfLQZRiY_80_DX140_DY140_CX105_CY92.jpg" />
+      <file href="mobile/5ZTREFHJp9X_80_P_0_0_492_330_DX204_DY204_CX152_CY102.png" />
+      <file href="mobile/6kbvJGaQbtT_80_DX250_DY250_CX124_CY186.jpg" />
+      <file href="mobile/5hHqtTCOJBj_80_P_384_202_1353_987_DX292_DY292_CX145_CY106.png" />
+      <file href="mobile/622bfxboOez_80_P_300_176_697_1564_DX262_DY262_CX67_CY150.png" />
+      <file href="mobile/6HCTPQrqgFb_80_P_138_83_1713_1489_DX196_DY196_CX122_CY106.png" />
+      <file href="mobile/6PvE1jfyxec_80_P_212_179_1490_1298_DX208_DY208_CX114_CY99.png" />
+      <file href="mobile/5iI2ERMI4Sh_80_P_0_125_1995_1204_DX212_DY212_CX154_CY93.png" />
+      <file href="mobile/6nZhaM3ql7l_80_P_51_26_259_381_DX192_DY192_CX73_CY107.png" />
+      <file href="mobile/64DsuY39xo1_80_P_145_0_1736_1457_DX234_DY234_CX150_CY126.png" />
+      <file href="mobile/5v2lmk53VY6_80_DX394_DY394_CX293_CY109.png" />
+      <file href="mobile/6O81yV8qi8Z_80_DX222_DY222_CX166_CY119.jpg" />
+      <file href="mobile/5yTehKVadEs_80_DX210_DY210_CX156_CY118.jpg" />
+      <file href="mobile/6CWKFV1XUKm_80_DX176_DY176_CX132_CY110.jpg" />
+      <file href="mobile/5bBtuTClM8o_80_DX190_DY190_CX142_CY116.jpg" />
+      <file href="mobile/6FIyDRWSK4E_80_DX262_DY262_CX126_CY195.jpg" />
+      <file href="mobile/5Xi4W0TiKfr_80_DX188_DY188_CX141_CY111.jpg" />
+      <file href="mobile/5iWTKjRUNbk_80_DX172_DY172_CX121_CY128.jpg" />
+      <file href="mobile/6pEVvKtSTbP_80_DX140_DY140_CX105_CY102.jpg" />
+      <file href="mobile/6LKl7TVZsLI_80_DX214_DY214_CX160_CY123.jpg" />
+      <file href="mobile/6rSoq9uKTnm_80_DX250_DY250_CX187_CY150.jpg" />
+      <file href="mobile/6BaiPpABBEJ_80_DX172_DY172_CX115_CY128.jpg" />
+      <file href="mobile/6U3LflqE1VC_80_DX164_DY164_CX122_CY102.jpg" />
+      <file href="mobile/6Kpyjkfr1tA_80_DX200_DY200_CX150_CY109.jpg" />
+      <file href="mobile/6IQL75NaKBw_80_DX244_DY244_CX183_CY122.jpg" />
+      <file href="mobile/6ZBN9ToX7Pl_80_DX186_DY186_CX139_CY108.jpg" />
+      <file href="mobile/6ivJazCG7a5_80_DX200_DY200_CX150_CY99.jpg" />
+      <file href="meta.xml" />
+      <file href="story_content/user.js" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5ntN7v0GoFL.js" />
+      <file href="html5/data/js/5pkhQ3BfOn4.js" />
+      <file href="html5/data/js/5zTWukvpIU7.js" />
+      <file href="html5/data/js/6Yg7DqTTAut.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/lib/scripts/ds-bootstrap.min.js" />
+      <file href="html5/lib/scripts/ds-frame.desktop.min.js" />
+      <file href="html5/lib/scripts/ds-frame.mobile.min.js" />
+      <file href="html5/lib/scripts/ds-slides.min.js" />
+      <file href="html5/lib/stylesheets/desktop.min.css" />
+      <file href="html5/lib/stylesheets/mobile.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="analytics-frame.html" />
+      <file href="story.html" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/indexAPI.html" />
+      <file href="lms/scormdriver.js" />
+    </resource>
+  </resources>
+</manifest>

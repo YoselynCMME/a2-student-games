@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <title>Interactive Majestic</title>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="js/jquery.crossword2.js"></script>
+    <script src="js/scriptcross2.js"></script>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            max-width: 100%;
+            height: 20px;
+        }
+
+        table tr {
+            width: 100%;
+        }
+
+        table td {
+            width: 40px;
+            height: 25px;
+            border: 1px solid #cdcdcd;
+            padding: 0;
+            margin: 0;
+            background: rgba(0, 0, 0, .2);
+            position: relative;
+        }
+
+        td input {
+            width: 100%;
+            height: 100%;
+            padding: 0em;
+            border: none;
+            text-align: center;
+            font-size: 15px;
+            color: #666;
+        }
+
+        td input:focus {
+            background-color: #f0fff0;
+        }
+
+        td span {
+            color: #444;
+            font-size: 0.8em;
+            position: absolute;
+            top: -1px;
+            left: 1px;
+        }
+
+        input.done {
+            font-weight: bold;
+            color: green;
+        }
+
+        .active,
+        .clues-active {
+            background-color: #9ACD32;
+            font-size: 13px;
+        }
+
+        .clue-done {
+            color: red;
+            text-decoration: line-through;
+        }
+
+        #puzzle-wrapper {
+            align-content: center;
+            margin-right: 3%;
+        }
+
+        #puzzle-clues {
+            color: #211D60;
+        }
+
+        #puzzle-clues li {
+            font-size: .1px;
+            opacity: 0px;
+        }
+
+        .item {
+            text-align: left;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            line-height: 300%;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+            border-radius: 5px;
+            border-bottom: 1px solid #1F72EA;
+        }
+
+        input:valid {
+            border-radius: 5px;
+            color: #00BC00;
+            border-bottom: 1px solid #1F72EA;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(../../public/images/english.png)">
+
+    <!-- Barra de Navegación -->
+
+    <div>
+        <div class="menu">
+            <a href="#" class="navbar-brand">
+                <img id="logoMajestic" src="../../public/images/majestic-education.png" alt=""> MED Majestic Education
+                Digital
+            </a>
+            <a class="navbar-brand" href="http://medigital-e-books.herokuapp.com/login">CloudBooks</a>
+            <a class="navbar-brand" href="../../index.html">Menu</a>
+            <a class="navbar-brand" href="crossword-menu.html"><i class="fa fa-arrow-circle-left"></i> Go back</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div style="margin-top: 20px;">
+            <div class="brand col" align="center">
+                <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">
+                    Crossword 2</p>
+                <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 30px; color: #85144b;">Useful
+                    collocations</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú  -->
+
+    <div class="container">
+
+        <div class="col-12 mx-auto">
+            <h5 style="font-size: 15px; margin-left: 20px;">
+                <span
+                    style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+                Solve the crossword puzzle by writing the correct answers. Remember that a letter is written in each
+                cell.
+            </h5>
+        </div>
+    </div>
+    <div class="container">
+        <div align="center" id="puzzle-wrapper">
+            <!-- crossword puzzle appended here -->
+        </div>
+        <hr>
+        <h3>Across</h3>
+        <ul style="list-style: none;" class="item">
+            <li> <span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">1.</span>
+                &nbsp; They prefer to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="watch|Watch"> TV. They do not like going to the movies.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">2.</span>
+                &nbsp; When you have an emergency, you should <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="call|Call"> the police.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">3.</span>
+                &nbsp; On Saturdays, I <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="stay|Stay"> up until late. I usually play videogames online.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">5.</span>
+                &nbsp; After we exercise at the gym, we <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="drink|Drink"> a lot of water.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">7.</span>
+                &nbsp; I want to travel around the world to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="learn|Learn"> about different countries.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">9.</span>
+                &nbsp; She likes to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="take|Take"> a shower after work.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">10.</span>
+                &nbsp; I used to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="ride|Ride"> a cute bike when i was three years old.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">13.</span>
+                &nbsp; To play baseball, you should know how to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="catch|Catch"> a ball in your catcher’s glove.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">15.</span>
+                &nbsp; My dog loves to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="dig|Dig"> holes all around the backyard.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">17.</span>
+                &nbsp; The builders will <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="build|Build"> a big building this month.</li>
+
+        </ul>
+
+        <hr>
+        <h3>Down</h3>
+        <ul style="list-style: none;" class="item">
+            <li> <span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">3.</span>
+                &nbsp; She really enjoys music, that’s why she loves to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="sing|Sing"> in the car.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">4.</span>
+                &nbsp; People <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="surf|Surf"> the Internet to look up for many things.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">6.</span>
+                &nbsp; I usually <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="have|Have"> breakfast at 7 am, after that I go to school.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">8.</span>
+                &nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="write|Write"> poems for my girlfriend every Valentine’s days.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">10.</span>
+                &nbsp; She loves to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="read|Read"> books about horror stories. </li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">12.</span>
+                &nbsp; Marcos is a famous athlete, he used to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="climb|Climb"> big mountains.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">14.</span>
+                &nbsp; If you want to play football, you should know how to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="kick|Kick"> a ball.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">16.</span>
+                &nbsp; People who watch football on TV, are waiting for the team to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="score|Score"> a goal.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">18.</span>
+                &nbsp; My family likes to <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="play|Play"> chess on Sunday.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="btn-group-sm mx-auto">
+            <!-- <a href="respuestas/crossword2.pdf">
+                <button type="button" class="btn btn-outline-dark">Answers</button>
+            </a> -->
+            <a href="crossword1.html">
+                <button type="button" class="btn btn-outline-warning">Behind</button>
+            </a>
+            <a href="crossword2.html">
+                <button type="button" class="btn btn-outline-success">Restart</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div
+        style="padding-bottom: 640px;background: no-repeat url(../../public/images/ninos.png) bottom center;width: 100%;">
+    </div>
+
+    <footer style="padding-top: 10px;">
+        <div class="container">
+            <div class="row">
+                <p style="color: white; font-size: 10px;">
+                    <span>&copy;&nbsp;
+                        <span class="copyright-year"></span>
+                        Todos los derechos reservados. &nbsp;
+                    </span>
+                    <a style="color: white; font-size: 10px;" href="https://www.3d-estudio.com.mx">3D Estudio.</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script>
+        document.getElementById('puzzle').getElementsByTagName('input');
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="format-detection" content="telephone=yes" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/memoria.css">
+    <title>Interactive Majestic</title>
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sopa.css">
+    <link rel="stylesheet" href="css/wordfind.css">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/colores.js"></script>
+    <script type="text/javascript" src="js/eventos.js"></script>
+    <script type="text/javascript" src="js/activity4.js"></script>
+    <script type="text/javascript" src="js/wordfind.js"></script>
+    <script type="text/javascript" src="js/wordfindgame.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        .text-soup {
+            font-family: 'Comfortaa', cursive;
+            font-size: 30px;
+            line-height: 27px;
+            -webkit-user-select: none;
+            /* Chrome 49+ */
+            -moz-user-select: none;
+            /* Firefox 43+ */
+            -ms-user-select: none;
+            /* No support yet */
+            user-select: none;
+            /* Likely future */
+        }
+
+        #scroller {
+            left: auto !important;
+            margin: auto;
+            -webkit-user-select: none;
+            /* Chrome 49+ */
+            -moz-user-select: none;
+            /* Firefox 43+ */
+            -ms-user-select: none;
+            /* No support yet */
+            user-select: none;
+            /* Likely future */
+        }
+
+        #wrapper {
+            z-index: 1;
+            overflow: hidden;
+            bottom: 44px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .item {
+            text-align: left;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            line-height: 300%;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+            border-radius: 5px;
+            border-bottom: 1px solid #1F72EA;
+        }
+
+        input:valid {
+            border-radius: 5px;
+            color: #00BC00;
+            border-bottom: 1px solid #1F72EA;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+
+    <div class="menu">
+        <a href="#" class="navbar-brand">
+            <img id="logoMajestic" src="../../public/images/majestic-education.png" alt=""> MED Majestic Education
+            Digital
+        </a>
+        <a class="navbar-brand" href="http://medigital-e-books.herokuapp.com/login">CloudBooks</a>
+        <a class="navbar-brand" href="../../index.html">Menu</a>
+        <a class="navbar-brand" href="soup-menu.html"><i class="fa fa-arrow-circle-left"></i> Go back</a>
+    </div>
+
+    <div class="container">
+        <div style="margin-top: 20px;">
+            <div class="brand col" align="center">
+                <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">Alphabet
+                    soup 4</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page bg01">
+
+        <div class="container">
+            <div class="col-12 mx-auto">
+                <h5 style="font-size: 15px; margin-left: 20px;">
+                    <span
+                        style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+                    Unit 4. Food and drinks
+                </h5>
+            </div>
+
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="container" id="lienzo"></div>
+
+                    <hr>
+                    <ul style="list-style: decimal;" class="item">
+                        <li>&nbsp; Please bring a <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="bottle|Bottle">of water, the day is too hot.</li>
+                        <li>&nbsp; She needs some <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="bread|Bread">to prepare some chicken sandwiches.</li>
+                        <li>&nbsp; I normally have <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="dinner|Dinner">at 8:00 am.</li>
+                        <li>&nbsp; I’ll grab a cup of coffee at the local <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="café|Café">near my house.</li>
+                        <li>&nbsp; I need a cup of <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="coffee|Coffee">in the mornings to wake up. I like to add some milk to it.</li>
+                        <li>&nbsp; My mom used to prepare a carrot cake. It was <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="delicious|Delicious">.</li>
+                        <li>&nbsp; He is feeling <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="hungry|Hungry">, he wants a club sandwich.</li>
+                        <li>&nbsp; I need a sharp <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="knife|Knife">to cut this.</li>
+                        <li>&nbsp; I really want to eat a big <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="piece of cake|Piece of cake">, a chocolate one!</li>
+                        <li>&nbsp; Why don’t we order a <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="pizza|Pizza">? Extra cheese and peperoni for me please!</li>
+                        <li>&nbsp; I need some white <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="rice|Rice">for the sushi.</li>
+                        <li>&nbsp; Do you prefer a club <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="sandwich|Sandwich">or a salad?</li>
+                        <li>&nbsp; Can I have a <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="slice|Slice">of pizza?</li>
+                        <li>&nbsp; This milkshake is too <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="sweet|Sweet">; I think it has a lot of sugar.</li>
+                        <li>&nbsp; Green <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="salad|Salad">is always a good choice to eat with your main dish.</li>
+                        <li>&nbsp; I’m so <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="thirsty|Thirsty">, I need a lot of water.</li>
+                        <li>&nbsp; What kind of <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="vegetable|Vegetable">do you prefer, lettuce, carrots or spinach?</li>
+                        <li>&nbsp; Can you please call the <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="waiter|Waiter">? I am ready to order.</li>
+                        <li>&nbsp; Look at this <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="menu|Menu">! Everything looks delicious.</li>
+
+                        <li>&nbsp; Ana wants a big <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="burger|Burger">with some French fries.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="btn-group-sm mx-auto">
+                    <!-- <a href="respuestas/soup4.pdf">
+                        <button type="button" class="btn btn-outline-dark">Answers</button>
+                    </a> -->
+                    <a href="soup3.html">
+                        <button type="button" class="btn btn-outline-warning">Behind</button>
+                    </a>
+                    <a href="soup4.html">
+                        <button type="button" class="btn btn-outline-success">Restart</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section
+            style="padding-bottom: 675px;background: no-repeat url(../../public/images/ninos.png) bottom center;width: 100%;">
+        </section>
+
+        <div class="card">
+            <div class="card-body">
+                <span class="copyright-year"></span><span>&nbsp;</span>Todos los derechos reservados. &nbsp;</span><a
+                    style="color: white;" href="https://www.3d-estudio.com.mx">3D Estudio.</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var arrayTemp = [
+            'bottle',    //ok
+            'bread',    //ok
+            'dinner',    //ok
+            'café',    //ok
+            'coffee',     //ok
+            'delicious',      //ok
+            'hungry',    //ok
+            'knife',      //ok
+            'piece of cake',    //ok
+            'pizza',       //ok
+            'rice',    //ok
+            'sandwich',    //ok
+            'slice',    //ok
+            'sweet',     //ok
+            'salad',  //ok
+            'thirsty',    //ok
+            'vegetable',    //ok
+            'waiter',    //ok
+            'menu',     //ok
+            'burger',     //ok
+        ];
+        var temp = arrayTemp.map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+
+        $(document).on('click', '#lienzo', function () {
+            if (arrayTemp.length == $('#lienzo .line').length) {
+                swal("Congratulations!", "You did it very well.", "success");
+            }
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="set/js/lockWebSite.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sopa.js"></script>
+
+
+</body>
+
+</html>
